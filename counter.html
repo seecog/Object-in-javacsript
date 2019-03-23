@@ -1,0 +1,30 @@
+<html>
+
+<script>
+var obj = {count : 0};
+Object.defineProperty(obj,'incr',{
+    get : function(){
+        this.count++;
+    }
+})
+
+Object.defineProperty(obj,'desc',{
+    get : function(){
+        this.count--;
+    }
+})
+
+Object.defineProperty(obj,'addvalue',{
+    set : function(n){
+        this.count = this.count+n;
+    }
+})
+
+console.log('The count is ',obj.count);
+obj.incr;
+obj.incr;
+console.log('The new value is ',obj.count);
+
+
+</script>
+</html>

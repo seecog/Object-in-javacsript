@@ -1,0 +1,14 @@
+1)Almost everything in javscript is object
+2)Boolean 
+var a = true;
+var a = new Boolean();
+var b = new Number();
+var c = new String();
+var d = new Date();
+
+Note : do not create the object of Date with new operator because it is a global object.
+var sum = new Function('a','b','return a*b')
+
+sum(2,3) : 6
+
+2)

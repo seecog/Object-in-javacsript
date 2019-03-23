@@ -1,0 +1,32 @@
+<html>
+
+<script>
+//1. object literal
+var person = {
+    firstname : 'Mohan',
+    lastname : 'Kumar',
+    age : 21,
+    sal : 200,
+    getName : function(){
+        return this.firstname+" "+this.lastname;
+    }
+}
+
+//2. Through new operator
+var product = new Object();
+product.name = "Apple";
+prouct.cost = 210;
+product.brand = 'Kasmiri fruits';
+console.log('The product detail is ',product);
+
+//3.define object constructor. 
+var Company = function(name,count){//Anonomous function
+this.name = name;
+this.count=count;
+}
+
+var ob1 = new Company("WIPRO",200);
+var ob2 = new Company("HCL",150);
+</script>
+
+</html>

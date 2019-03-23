@@ -1,0 +1,29 @@
+<html>
+
+<script>
+var person = {
+name : "Mohan",
+age : 21,
+sal : 200
+
+};
+//object literal
+//1. is through dot opeartor
+//2. []
+console.log('The name is '+person.name);
+console.log('The age is '+person['age']);
+console.log('The salary is '+person['sal'])
+
+
+//get all the keys of object
+//1. loop
+for(x in person){
+    console.log("==> "+x);
+}
+//2. Object.keys()
+console.log(Object.keys(person))
+
+
+</script>
+
+</html>

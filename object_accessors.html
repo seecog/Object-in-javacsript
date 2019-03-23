@@ -1,0 +1,27 @@
+<html>
+
+<script>
+//define object accessors
+//In ECMA5 GET and SET are introduced 2009
+var person = {
+    firstname : "Mohan",
+    lastname : 'Kumar',
+    age : 21,
+    sal : 200,
+    contact : 3987318712,
+   /* getFullName : function(){
+        return this.firstname+" "+this.lastname
+    },*/
+    get fullname(){
+        return this.firstname+" "+this.lastname;
+    },
+    set revised(sal){
+this.sal = sal;
+    }
+}
+//Note : getter and setter are named function
+person.revised = 344;
+console.log('The complete salary is '+person.sal)
+
+</script>
+</html>

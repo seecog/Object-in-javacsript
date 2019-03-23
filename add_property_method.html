@@ -1,0 +1,22 @@
+<html>
+
+<script>
+var person = {
+    name : "Mohan",
+    age : 21,
+    sal : 200
+}
+
+person.nationality = "indian";//add property
+person.getnationality = function(){//add method
+    return this.nationality.toUpperCase()
+}
+
+console.log(person.name,person.age,person.sal,person.nationality,person.getnationality());
+//delete property from existing object
+delete person.age;
+delete person.sal;
+console.log('the object is ',person);
+//Note : delete opeartor can not delete the prototype property
+</script>
+</html>

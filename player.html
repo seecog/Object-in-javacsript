@@ -1,0 +1,28 @@
+<html>
+
+<script>
+var magicbox = {
+    count : 0,
+    get incr(){
+        this.count++;
+    },
+    get reset(){
+        this.count=0;
+    },
+    get dec(){
+        this.count--;
+    },
+    set addvalue(n){
+        this.count = this.count+n;
+    }
+}
+
+console.log('The initial value is '+magicbox.count);
+magicbox.incr;
+magicbox.incr;
+magicbox.incr;
+console.log('The current value is '+magicbox.count);
+magicbox.addvalue = 5;
+console.log('The again value is '+magicbox.count);
+</script>
+</html>

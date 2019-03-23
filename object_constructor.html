@@ -1,0 +1,22 @@
+<html>
+
+<script>
+var Person = function(name,age,sal){
+    this.name = name;
+    this.age = age;
+    this.sal = sal;
+}
+
+Person.prototype.nationality = "Indian ";
+Person.prototype.getNationality = function(){
+    return this.nationality;
+}
+
+var obj1 = new Person("Mohan",21,200);
+var obj2 = new Person("Sohan",22,123);
+console.log(obj1.getNationality(),obj2);
+
+
+</script>
+
+</html>
